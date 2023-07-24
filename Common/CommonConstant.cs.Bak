@@ -1,0 +1,50 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Threading.Tasks;
+
+namespace AzureFunctionApp.common
+{
+    public static class CommonConstant
+    {
+        public static string CONNECTIONSTRING_TEXT = "connectionString";
+        // UAT
+        public static string KEYVALUE_TXT = "uat-dbcon-saleonmob";
+        // DEV 
+        //public static string KEYVALUE_TXT = "dev-uat-database-saleonmob";
+        public static string username = "SOM_INF";
+        public static string pwd = "Ptg@2021";
+        public static string API_OutboundHost = "https://sapwdpoqas.pt.co.th";
+
+        // PROD
+        /*
+        public static string username = "andesindrawa";
+        public static string pwd = "Ptg2019@";
+        public static string API_OutboundHost = "https://sapwdpod.pt.co.th";
+        */
+        public static string API_OutboundPort = "8443";
+        public static string API_OutboundBaseUrl = API_OutboundHost+":"+ API_OutboundPort+"/";
+        public static string API_OutboundCompanyInformation = API_OutboundBaseUrl + "RESTAdapter/ZSOMI001_OutboundCompanyInformation/";
+        public static string API_OutboundSaleOrgInformation = API_OutboundBaseUrl + "RESTAdapter/ZSOMI002_OutboundSaleOrgInformation/";
+        public static string API_OutboundSaleOfficeInformation = API_OutboundBaseUrl + "RESTAdapter/ZSOMI003_OutboundSaleOfficeInformation/";
+        public static string API_OutboundSaleGroupInformation = API_OutboundBaseUrl + "RESTAdapter/ZSOMI004_OutboundSaleGroupInformation/";
+        public static string API_OutboundSaleOfficetoSaleGroupInformation = API_OutboundBaseUrl + "RESTAdapter/ZSOMI005_OutboundSaleOfficetoSaleGroupInformation/";
+        public static string API_OutboundSaleAreaInformation = API_OutboundBaseUrl + "RESTAdapter/ZSOMI006_OutboundSaleAreaInformation/";
+        public static string API_OutboundSaleOfficeToSale = API_OutboundBaseUrl + "RESTAdapter/ZSOMI007_OutboundSaleOfficeToSale/";
+        public static string API_OutboundCustomerInformation = API_OutboundBaseUrl + "RESTAdapter/ZSOMI011_OutboundCustomerInformation/";
+        public static string API_OutboundSaleMaterialMaster = API_OutboundBaseUrl + "RESTAdapter/ZSOMI012_OutboundSaleMaterialMaster/";
+        public static string API_OutboundSaleOrderDocumentTypes = API_OutboundBaseUrl + "RESTAdapter/ZSOMI016_OutboundSaleOrderDocumentTypes/";
+        public static string API_OutboundSaleOrderDocumentTypesToSaleArea = API_OutboundBaseUrl + "RESTAdapter/ZSOMI017_OutboundSaleOrderDocumentTypesToSaleArea/";
+        public static string API_OutboundSaleOrderReasons = API_OutboundBaseUrl + "RESTAdapter/ZSOMI018_OutboundSaleOrderReasons/";
+        public static string API_OutboundSaleOrderItemType = API_OutboundBaseUrl + "RESTAdapter/ZSOMI019_OutboundSaleOrderItemType/";
+        public static string API_OutboundRegionInformation = API_OutboundBaseUrl + "RESTAdapter/ZSOMI023_OutboundRegionInformation/";
+        public static string API_OutboundCountryInformation = API_OutboundBaseUrl + "RESTAdapter/ZSOMI024_OutboundCountryInformation/";
+        public static string API_OutboundBAInformation = API_OutboundBaseUrl + "RESTAdapter/ZSOMI025_OutboundBAInformation/";
+        public static string API_OutboundIncotermInformation = API_OutboundBaseUrl + "RESTAdapter/ZSOMI028_OutboundIncotermInformation/";
+        public static string API_OutboundSubDistrictInformation = API_OutboundBaseUrl + "RESTAdapter/ZSOMI029_OutboundSubDistrictInformation/";
+        public static string API_OutboundDistrictInformation = API_OutboundBaseUrl + "RESTAdapter/ZSOMI030_OutboundDistrictInformation/";
+        public static string USER_AGEN = "PTG-Batch SlaeOnMobile";
+        public static string API_TIMEOUT = "60";
+
+    }
+}
